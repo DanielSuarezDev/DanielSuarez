@@ -1,0 +1,79 @@
+header .redes img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.nav-logo img {
+  width: 26rem;
+  height: 6rem;
+}
+
+.post-button {
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.redes img {
+  -webkit-transition: all .9s ease;
+}
+
+.redes img:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(0.9);
+}
+
+.post-target {
+  -webkit-transition: all .9s ease;
+}
+
+.post-target:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(0.9);
+}
+
+.post-container-img img {
+  height: 25rem;
+}
+
+.profile-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-areas: "title title title";
+  gap: 1rem;
+}
+
+.project-target {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project-target {
+  -webkit-transition: all .9s ease;
+}
+
+.project-target:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(0.9);
+}
+
+.my-project {
+  grid-area: title;
+}
+
+.profile-cont .profile-title {
+  font-size: 4rem;
+}
+
+.profile-cont .profile-description {
+  font-size: 1.6rem;
+}

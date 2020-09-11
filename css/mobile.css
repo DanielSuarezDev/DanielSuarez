@@ -1,0 +1,270 @@
+/* Reset & Rule
+   ========================================================================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Header
+   ========================================================================== */
+header {
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+header .redes {
+  width: inherit;
+  height: auto;
+  background-color: #254354;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .redes img {
+  width: 3rem;
+  height: 3rem;
+}
+
+header .redes .red-link {
+  margin-right: 1rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.nav-logo img {
+  width: 12rem;
+  height: 6rem;
+  margin: 0 1rem;
+}
+
+.nav-profile {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-profile .navProfile-link {
+  border: 1px solid #254354;
+  padding: 1.3rem 4.3rem;
+  border-radius: 1.3rem;
+  color: #254354;
+  font-size: 1.4rem;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.3);
+  border: transparent;
+}
+
+.nav-profile .navProfile-link:hover {
+  background: #254354;
+}
+
+/* Main
+   ========================================================================== */
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../images/photos/Hom_small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-main section {
+  display: grid;
+  grid-column: 2;
+  text-align: center;
+  justify-items: center;
+  height: 35rem;
+  margin-top: 6rem;
+}
+
+.home-text {
+  font-size: 3rem;
+  font-weight: 70rem;
+  letter-spacing: 0.5rem;
+  color: #ffffff;
+}
+
+.home-main-button {
+  width: 10rem;
+  height: 5rem;
+  background: #254354;
+  display: grid;
+  align-content: center;
+  border-radius: 1rem;
+  margin-top: -10rem;
+  border: transparent;
+  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.9);
+}
+
+.home-main-button a {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+/* POST
+   ========================================================================== */
+.container {
+  width: 80%;
+  min-width: 30rem;
+  max-width: 1200rem;
+  /* border: 1px solid red; */
+  margin: 1rem auto;
+}
+
+.post-container-img img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.post-target {
+  /* border: 1px solid rebeccapurple; */
+  box-shadow: 1px 1px 15px 2px rgba(206, 198, 198, 0.9);
+  margin: 1rem 0;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.informationContainer {
+  padding: 2rem 1rem;
+}
+
+.post-title {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.post-description {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.post-button {
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  justify-items: center;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  font-size: 1.3rem;
+}
+
+footer {
+  width: 100%;
+  background: #254354;
+  color: #ffffff;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* PROFILE
+   ========================================================================== */
+.profile {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  padding: 1rem;
+}
+
+.photo-profile img {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-title {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.profile-description {
+  font-size: 1.3rem;
+}
+
+.project-target {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 1px 1px 9px 2px rgba(206, 198, 198, 11);
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.project-description {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.project-button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #254354;
+  padding: 1rem 0;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 1rem;
+  border-radius: 1.6rem;
+  font-size: 1.3rem;
+}
+
+.body {
+  lett
+}
